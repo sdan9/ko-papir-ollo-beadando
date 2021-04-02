@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="game.js" defer></script>
+    <title>Kő-Papír-Olló - gyakorlás</title>
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>Kő-Papír-Olló</h1>
+    </header>
+
+    <div class="scores">
+      <div class="td">
+        Játékos
+      </div>
+      <div class="td user-score">
+        <p>0</p>
+      </div>
+      <div class="td computer-score">
+        <p>0</p>
+      </div>
+      <div class="td">
+        Gép
+      </div>
+    </div>
+
+    <div class="tables">
+      <div class="td" id = "userChoice">
+        <img src="assets/rock.png" width="150px" class ="choices" id ="rock">
+      </div>
+      <div class="td comp-hand" id = "compChoice">
+        <img src="assets/rock.png" width="150px" class ="choices" id ="rock">
+      </div>
+    </div>
+
+    <div id = "result" class = "result-message">
+      Válassz az alábbi lehetőségek közül!
+    </div>
+    
+    <div class="tables">
+      <div class="choose-hand">
+        <img src="assets/rock.png" width="200px" class ="choices" id ="rock">
+      </div>
+      <div class="choose-hand">
+        <img src="assets/paper.png" width="200px" class ="choices" id ="paper">
+      </div>
+      <div class="choose-hand">
+        <img src="assets/scissors.png" width="200px" class ="choices" id ="scissors">
+      </div>
+    </div>
+
+    <div>
+      <button onclick = "reset()" id ="reset" class="reset-button">Új játék</button>
+    </div>
+
+  </body>
+</html>
